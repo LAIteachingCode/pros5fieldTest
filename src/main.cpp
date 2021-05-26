@@ -51,7 +51,7 @@ void disabled() {
  */
 void competition_initialize() {
 	// Show if we are in competition_initialized state
-	std::cout << "Entered competition initialized state at: " << pros::millis() << "\n";
+	std::cout << "\nEntered competition initialized state at: " << pros::millis() << "\n";
 	//We are going to run a slight delay task
 	int loopCount = 0;
   std::cout << "Starting delay: ";
