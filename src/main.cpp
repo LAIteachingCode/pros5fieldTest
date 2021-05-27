@@ -15,18 +15,18 @@ void initialize() {
 	  // Write to the debug console
     // Let get the system up time and show it as well
 		std::uint32_t now = pros::millis();   // time stamp in milli sec
-		std::cout << "Entering intialize routine - started at: " << pros::millis() << "\n";
+		std::cout << "Entering initialize routine - started at: " << pros::millis() << "\n";
 
 		// Write to the V5 LCD as well
 		pros::lcd::initialize();          // Initialize the LCD display
-		pros::lcd::print(1, "Intitialize task started at %3d", now );
+		pros::lcd::print(1, "Initialize task started at %3d", now );
 
 		// We are going to delay the Initialize function for 300millisec to show
 		// it is active and running "pseudo code"
 		pros::delay(300);
-		pros::lcd::print(2, "Intitialize task stopped at %3d", pros::millis() );
+		pros::lcd::print(2, "Initialize task stopped at %3d", pros::millis() );
 
-		std::cout << "Intialize task stopped at: " << pros::millis() << "\n";
+		std::cout << "Initialize task stopped at: " << pros::millis() << "\n";
 }
 
 /**
@@ -75,8 +75,8 @@ void competition_initialize() {
  * from where it left off.
  */
 void autonomous() {
-	// Entering autonomous routine -- we are simulating runnign code by delaying
-	// through a loop with a counter of 50 and 200millisec per lopp the program
+	// Entering autonomous routine -- we are simulating running code by delaying
+	// through a loop with a counter of 50 and 200millisec per loop the program
 	// simulating running actual code.
 
 	int loopCount = 0;
